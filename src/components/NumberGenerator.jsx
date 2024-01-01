@@ -46,14 +46,14 @@ async function addNumberToDatabase(number) {
 
   return (
     <div>
-      <h2>Generated Numbers:</h2>
-      <button onClick={fetchNumbers}>Generate</button>
       <ul>
         {generatedNumbers.map((number, index) => (
           <button className="number-button"  key={index} onClick={() => addNumberToDatabase(number)}>
             {number > 999 ? number : number > 99 ? `0${number}` : number > 9 ? `00${number}` : `000${number}`}
           </button>
         ))}
+              <button onClick={fetchNumbers}>Generate</button>
+
       </ul>
     </div>
   );

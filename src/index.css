@@ -88,6 +88,22 @@ button:focus-visible {
   margin: 10px;
 }
 
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-input {
+  -moz-appearance: textfield;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.try-number-container {
+  margin-top: 4em;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
