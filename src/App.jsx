@@ -29,7 +29,7 @@ function App() {
           <div>
             <h3> xxx</h3>
             <ul>
-              {numbers.filter(number => number < 1000).map(number => (
+              {numbers.filter(number => number < 1000).sort((a, b) => a - b).map(number => (
                 <li key={number}>{number}</li>
               ))}
             </ul>
@@ -38,7 +38,7 @@ function App() {
             <div key={i}>
               <h3>{i}xxx</h3>
               <ul>
-                {numbers.filter(number => Math.floor(number / 1000) === i).map(number => (
+                {numbers.filter(number => Math.floor(number / 1000) === i).sort((a, b) => a - b).map(number => (
                   <li key={number}>{number}</li>
                 ))}
               </ul>
