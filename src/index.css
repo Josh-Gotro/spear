@@ -63,7 +63,7 @@ button:focus-visible {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #747bff;
   /* Green */
   color: white;
   text-align: center;
@@ -75,7 +75,7 @@ button:focus-visible {
 }
 
 .number-button:hover {
-  background-color: #45a049;
+  background-color: #646cff;;
 }
 
 .columns {

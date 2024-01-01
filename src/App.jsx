@@ -22,7 +22,13 @@ function App() {
 
   return (
     <>
-      <h1>spear</h1>
+          <h1>
+      <span style={{color: 'red'}}>s</span>
+      <span style={{color: 'orange'}}>p</span>
+      <span style={{color: 'yellow'}}>e</span>
+      <span style={{color: 'green'}}>a</span>
+      <span style={{color: 'blue'}}>r</span>
+    </h1>
       <NumberGenerator onNumberAdded={fetchNumbers} />
       <TryNumber onNumberAdded={fetchNumbers} />
       <div className="card">
